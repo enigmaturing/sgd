@@ -6,6 +6,7 @@ public class KreisTest {
 		Kreis kreis = new Kreis(100, 100, 50);
 		String str = kreis.toString();
 		System.out.println("Das Kreisobjekt als String: " + str);
+		System.out.println("Prueba GitHub");
 	}
 	
 }
