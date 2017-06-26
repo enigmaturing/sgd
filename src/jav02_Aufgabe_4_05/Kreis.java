@@ -1,4 +1,4 @@
-package jav02_Wiederholung_4_03;
+package jav02_Aufgabe_4_05;
 
 public class Kreis extends Figur {
 	private int radius;
@@ -22,15 +22,6 @@ public class Kreis extends Figur {
 		this.radius = radius;
 	}
 	
-	public String getInfoKreis(){
-		return	"x=" + this.x +
-				" y=" + this.y + 
-				" radius=" + this.radius +
-				" flaeche=" + getFlaeche() + 
-				" umfang=" + getUmfang();
-		
-	}
-	
 	public double getFlaeche(){
 		return PI * radius * radius;
 	}
@@ -39,12 +30,12 @@ public class Kreis extends Figur {
 		return 2 * PI * radius;
 	}
 	
-	public void bewege(int deltaX, int deltaY){
-		this.x += deltaX;
-		this.y += deltaY;
-	}
-	
 	public void skaliere(int scale){
 		this.radius += scale;
 	}
+	
+	public void zeichne(java.awt.Graphics g){
+		g.drawOval(x-radius, y-radius, 2*radius, 2*radius);
+	}
 }
+
