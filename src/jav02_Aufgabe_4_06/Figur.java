@@ -21,7 +21,7 @@ public abstract class Figur {
 	
 	public abstract double getUmfang();
 	
-	public abstract void skaliere(int scale);
+	public abstract void skaliere(int delta);
 	
 	public abstract void zeichne(java.awt.Graphics g);
 }
