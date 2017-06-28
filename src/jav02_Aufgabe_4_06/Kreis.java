@@ -11,6 +11,8 @@ public class Kreis extends Figur {
 		this.x = x;
 		this.y = y;
 		this.radius = radius;
+		this.breite = 2 * radius;
+		this.hoehe = 2 * radius;
 		kreisZaehler++;
 	}
 	

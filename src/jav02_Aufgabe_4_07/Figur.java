@@ -1,4 +1,4 @@
-package jav02_Aufgabe_4_06;
+package jav02_Aufgabe_4_07;
 
 public abstract class Figur {
 	protected int x, y, breite, hoehe;
