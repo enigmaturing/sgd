@@ -5,9 +5,9 @@ public class BuchstabenMap extends java.util.TreeMap{
 	private Zeichen zeichenObj;
 	
 	public static void main(String [] args){
-		BuchstabenMap Map = new BuchstabenMap();
-		Map.count();
-		Map.print();
+		BuchstabenMap miMapa = new BuchstabenMap();
+		miMapa.count();
+		miMapa.print();
 	}
 	
 	public void count(){
