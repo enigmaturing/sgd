@@ -13,7 +13,8 @@ public class Zeichen {
 		anzahl++;
 	}
 	
-	//this method overwrites the method toString of the class Object
+	//the method toString() of the class Zeichen
+	//overwrites the method toString of the class Object
 	public String toString(){
 		return charObj.toString() + "\t" + anzahl;
 	}

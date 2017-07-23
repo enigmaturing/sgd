@@ -16,6 +16,18 @@ public class BuchstabenMap extends java.util.TreeMap{
 		while(index < textLength){
 			char c = str.charAt(index);
 			Character charObj = new Character(c);
+			
+			//FIRST Version (using the containsKey methode first to check if the object with key charObj exists):		
+//			if (containsKey(charObj)){
+//				zeichenObj = (Zeichen)get(charObj);
+//				zeichenObj.increment();
+//			}else{
+//				zeichenObj = new Zeichen(charObj);
+//				put(charObj, zeichenObj);
+//			}
+//			index++;
+					
+			//SECOND Version (using the get methode first to check if the object with key charObj exists):		
 			zeichenObj = (Zeichen)get(charObj);
 			if (zeichenObj == null){
 				zeichenObj = new Zeichen(charObj);
@@ -26,7 +38,6 @@ public class BuchstabenMap extends java.util.TreeMap{
 			index++;
 		}
 	}
-	
 	public void print(){
 		java.util.Collection coll = this.values();
 		java.util.Iterator iterator = coll.iterator();
@@ -35,7 +46,6 @@ public class BuchstabenMap extends java.util.TreeMap{
 			zeichenObj = (Zeichen)iterator.next();
 			System.out.println(zeichenObj.toString());
 		}
-		System.out.println(zeichenObj.toString());
 		System.out.println("Die Map umfasst " + this.size() + " Zeichen-Objekte, "
 				+ "der Text enthält " + str.length() + " Zeichen.");
 	}
